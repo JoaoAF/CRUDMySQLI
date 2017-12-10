@@ -1,0 +1,47 @@
+body{
+	overflow: auto;
+	max-height: 1200px;
+}
+
+h1{
+	padding: 15px;
+}
+
+footer{
+	background-color: #eee;
+	padding: 12px;
+	position: relative;
+	width: 100%;
+	height: 80px;
+	bottom: 0;
+	box-sizing: border-box;
+}
+
+footer p{
+	padding: 12px;
+}
+
+section {
+	margin-bottom: 40px!important;  
+}
+
+#btn-pesquisa, #input-pesquisa{
+	border-radius: 0px!important;
+	box-shadow: 1px 7px 18px #eee;
+}
+
+section.container.listing form{
+	margin-bottom: 20px;
+}
+
+.btn{
+	cursor: pointer;
+}
+
+#logout{
+	display: none;
+}
+
+p{
+	margin: 1em 0;
+}
