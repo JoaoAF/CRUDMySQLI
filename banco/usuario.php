@@ -118,9 +118,10 @@
 		return $_SESSION['usuario_logado'];
 	}
 
-	function logInUser($nomeUsuario){
+	function logInUser($nomeUsuario, $email){
 		
 		$_SESSION['usuario_logado'] = $nomeUsuario;
+		$_SESSION['usuario_logadoEmail'] = $email;
 		header("Location: index.php");
 	
 	}
@@ -145,5 +146,14 @@
 		$resultado = mysqli_query($conexao, $query);
 		return mysqli_fetch_assoc($resultado);	
 	
+	}
+
+	function mudarSenha($conexao, $email, $senha){
+		$senhaCriptografada = md5($senha);
+		$query = "UPDATE usuario SET 
+			senha = '{$senhaCriptografada}' WHERE email = '{$email}'";
+
+		return mysqli_query($conexao, $query);
+
 	}
 ?>

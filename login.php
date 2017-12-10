@@ -12,7 +12,7 @@
 		$_SESSION['login_Ivalido'] = 'Login invalido!';
 		header("Location: index.php");
  
- 	}else{ logInUser($usuario['nome_usuario']); 
+ 	}else{ logInUser($usuario['nome_usuario'], $email); 
 
  	} 
 

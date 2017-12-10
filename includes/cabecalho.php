@@ -22,6 +22,7 @@
 		<li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
 		<li class="nav-item"><a class="nav-link" href="form-cadastro.php">Cadastro</a></li>
 		<li class="nav-item"><a class="nav-link" href="listagem.php">Listagem</a></li>
+		<li class="nav-item"><a class="nav-link" href="configuracao.php">Configurações</a></li>
 		<li>
 			<form id="logout" action="logout.php">
 				<button type="submit" class="btn btn-danger">logout</div>

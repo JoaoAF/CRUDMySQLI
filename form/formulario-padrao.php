@@ -1,4 +1,4 @@
-
+	
 	<div class="form-group col-6">
 		<label>Nome de usuário: </label>
 		<input value="<?=$nome?>" class="form-control" type="text" name="nome_de_usuario">
