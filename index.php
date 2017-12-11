@@ -28,9 +28,7 @@
 	<section class="container">
 		
 		<?php if (isset($_SESSION['usuario_logado'])) {  ?>
-		
-			<p class="alert alert-success col-4">Logado: 
-			<b><?= $_SESSION['usuario_logado'] ?></b></p>
+	
 			<style> #logout{display: block!important;} </style>	
 		
 		<?php  }else{ ?>

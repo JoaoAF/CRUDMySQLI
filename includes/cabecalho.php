@@ -4,8 +4,14 @@
 	require_once('banco/usuario.php'); 
 	session_start();
 
-?>
+	if(isset($_SESSION['usuario_logado'])):
 
+?>
+	<div class="alert alert-success">
+		Você esta logado como: <b><?= $_SESSION['usuario_logado'] ?></b>
+	</div>
+	
+<?php endif; ?>
 <!DOCTYPE html>
 <html>
 <head>

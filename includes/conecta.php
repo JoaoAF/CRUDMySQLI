@@ -1,6 +1,5 @@
 <?php 
 
-	/*$conexao = mysqli_connect('localhost', 'root', '', 'crud');*/ 
 	$conexao = new mysqli('localhost', 'root', '', 'crud');
 	$conexao->set_charset("utf8");
 
