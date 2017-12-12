@@ -11,7 +11,7 @@
 		echo $_SESSION['mudarSenhaErro'];
 		unset($_SESSION['mudarSenhaErro']);
 	endif;
-
+	checkUserOnline();
 ?>
 	
 	<section class="container">
